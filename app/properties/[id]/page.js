@@ -6,6 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { fetchProperty } from "@/utils/requests";
 import PropertyHeaderImage from "@/components/PropertyHeaderImage";
 import PropertyDetails from "@/components/PropertyDetails";
+import PropertyImages from "@/components/PropertyImages";
 
 const PropertyPage = () => {
 	const { id } = useParams();
@@ -146,6 +147,8 @@ const PropertyPage = () => {
 							</div>
 						</div>
 					</section>
+
+					<PropertyImages images={property.images} />
 				</>
 			)}
 		</>
